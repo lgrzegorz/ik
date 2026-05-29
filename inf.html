@@ -300,7 +300,7 @@
     <div class="modal-title">Wybierz termin</div>
     <div class="modal-divider">❦ ❦ ❦</div>
 
-    <label class="modal-label">Kiedy? :D</label>
+    <label class="modal-label">Kiedy?</label>
     <select id="selectDay">
       <option value="" disabled selected>— wybierz dzień —</option>
     </select>
@@ -404,7 +404,7 @@
     };
 
     emailjs.send("service_tirco4i", "template_nw159qu", {
-      when:  chosenDay,
+      day:   chosenDay,
       time:  chosenHour,
       place: loc
     }).then(done).catch(done);
